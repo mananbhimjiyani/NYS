@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<form action="/userReg" method="post">
+  <div class="container">
+    <h1>User Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <div class="userRole">
+    <label for="userRoles" ><b>Choose a role:</b></label>
+    <select name="userRoles" id="userRoles" required >
+      <optgroup label="Front-end User">
+        <option value="student" selected>Yoga Practitioner</option>
+        <option value="recep">Front Desk Manager</option>
+        <option value="mentor">Mentor</option>
+      </optgroup>
+      <optgroup label="Back-end User">
+        <option value="Accountant">Accountant</option>
+        <option value="studioManager">Studio Manager</option>
+      </optgroup>
+    </select>
+    </div>
+    <div class="container">
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Userame" name="username" id="username" required>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="pswRepeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="pswRepeat" id="pswRepeat" required>
+    <hr>
+
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="userLogin.html">Sign in</a>.</p>
+  </div>
+  </div>
+</form>
+</body>
+</html>

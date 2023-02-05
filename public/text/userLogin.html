@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Company Login</title>
-    <link rel="stylesheet" href="styles.css">
-  <script src="index.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+  <script src="../../index.js"></script>
 </head>
 <body>
-<form name="compReg" action="action-compLogin.php" onsubmit="return validateForm()">
+<form name="userLogin" action="/authUser" method="post">
   <div class="container">
-    <h1>Login</h1>
+    <h1>User Login</h1>
     <p>Please fill in this form for Logging In.</p>
     <hr>
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" id="username" required>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
@@ -25,7 +25,7 @@
   </div>
 
   <div class="container signin">
-    <p>Don't Have an account? <a href="compReg.html">Register Here</a>.</p>
+    <p>Don't Have an account? <a href="userReg.html">Register Here</a>.</p>
   </div>
 </form>
 
